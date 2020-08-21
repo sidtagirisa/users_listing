@@ -22,8 +22,10 @@ export default function Landing(props: { children: JSX.Element }): JSX.Element {
   const { children } = props;
 
   useEffect(() => {
-    init(dispatch);
-  }, [dispatch]);
+    if (loading) {
+      init(dispatch);
+    }
+  }, [dispatch, loading]);
 
   if (loading) {
     return (

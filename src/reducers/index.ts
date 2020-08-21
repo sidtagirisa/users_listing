@@ -1,7 +1,5 @@
-import { ActionType, GenericObject } from '../constants';
+import { ActionType } from '../constants';
 import { State } from '../context/initialState';
-
-const namespace = 'reducer';
 
 export default function reducer(
   state: State,
@@ -13,8 +11,5 @@ export default function reducer(
 
     case ActionType.UPDATE_LOADING:
       return { ...state, loading: action.data };
-
-    default:
-      throw new Error(`[${namespace}] unhandled action '${action.type}'`);
   }
 }
