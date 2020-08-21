@@ -10,6 +10,7 @@
     "@types/node": "^12.12.54",
     "@types/react": "^16.9.46",
     "@types/react-dom": "^16.9.8",
+    "axios": "^0.20.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
@@ -18,8 +19,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "CI=true react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test",
+    "test:watch:update": "react-scripts test -u",
+    "cover": "npm run test -- --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,6 +37,25 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/index.tsx",
+      "!<rootDir>/src/serviceWorker.ts",
+      "!<rootDir>/src/react-app-env.d.ts"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "coverageReporters": [
+      "text"
     ]
   }
 }
