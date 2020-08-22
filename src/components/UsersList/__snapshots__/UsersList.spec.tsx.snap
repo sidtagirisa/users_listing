@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`# UsersList should not render anything if filtered value is not present 1`] = `<div />`;
+
+exports[`# UsersList should render list of users 1`] = `
+<div>
+  <div
+    class="list"
+  >
+    <div
+      class="information"
+    >
+      <h4
+        class="heading"
+      >
+        name
+      </h4>
+      <p
+        class="value"
+      >
+        Leanne Graham
+      </p>
+    </div>
+    <div
+      class="information"
+    >
+      <h4
+        class="heading"
+      >
+        username
+      </h4>
+      <p
+        class="value"
+      >
+        Bret
+      </p>
+    </div>
+    <div
+      class="information"
+    >
+      <h4
+        class="heading"
+      >
+        email
+      </h4>
+      <p
+        class="value"
+      >
+        Sincere@april.biz
+      </p>
+    </div>
+    <div
+      class="information"
+    >
+      <h4
+        class="heading"
+      >
+        address
+      </h4>
+      <p
+        class="value"
+      >
+        Apt. 556, Kulas Light, Gwenborough, 92998-3874
+      </p>
+    </div>
+    <div
+      class="information"
+    >
+      <h4
+        class="heading"
+      >
+        phone
+      </h4>
+      <p
+        class="value"
+      >
+        <a
+          href="tel:1-770-736-8031 x56442"
+        >
+          1-770-736-8031 x56442
+        </a>
+      </p>
+    </div>
+    <div
+      class="information"
+    >
+      <h4
+        class="heading"
+      >
+        website
+      </h4>
+      <p
+        class="value"
+      >
+        hildegard.org
+      </p>
+      <p
+        class="description"
+      >
+        Multi-layered client-server neural-net
+      </p>
+    </div>
+  </div>
+</div>
+`;

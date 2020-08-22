@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`# App should render basic app 1`] = `
+exports[`# SearchBox should render search box 1`] = `
 <div
   class="sticky"
 >
   <input
     class="search"
-    placeholder="Search for Users"
+    placeholder="search..."
     type="search"
   />
 </div>

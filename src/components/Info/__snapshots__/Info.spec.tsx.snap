@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`# Info should render with description if passed 1`] = `
+<div
+  class="information"
+>
+  <h4
+    class="heading"
+  >
+    some value
+  </h4>
+  <p
+    class="value"
+  >
+    some value
+  </p>
+  <p
+    class="description"
+  >
+    some description
+  </p>
+</div>
+`;
+
+exports[`# Info should render with info passed 1`] = `
+<div
+  class="information"
+>
+  <h4
+    class="heading"
+  >
+    some value
+  </h4>
+  <p
+    class="value"
+  >
+    some value
+  </p>
+</div>
+`;
