@@ -1,0 +1,12 @@
+@import "../../styles/variables.scss";
+
+.list {
+  max-width: $max-width;
+  margin: auto;
+  margin-top: 2%;
+  background: #fff;
+  box-shadow: $box-shadow;
+  width: 50%;
+  padding: 35px 40px;
+  z-index: 1;
+}
