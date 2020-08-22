@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { ActionType } from '../../constants';
 import { StateContext } from '../../context/StateProvider';
 import { getUsers } from '../../services/users';
+import './Landing.scss';
 
 const init = async (dispatch: React.Dispatch<any>): Promise<void> => {
   const users = await getUsers();
@@ -30,7 +31,7 @@ export default function Landing(props: { children: JSX.Element }): JSX.Element {
   if (loading) {
     return (
       <React.Fragment>
-        <div>loading...</div>
+        <div className="loading">loading...</div>
       </React.Fragment>
     );
   }
