@@ -47,7 +47,8 @@
       "!<rootDir>/src/serviceWorker.ts",
       "!<rootDir>/src/react-app-env.d.ts",
       "!<rootDir>/src/config.ts",
-      "!<rootDir>/src/constants.ts"
+      "!<rootDir>/src/constants.ts",
+      "!src/**/index.ts"
     ],
     "coverageThreshold": {
       "global": {
