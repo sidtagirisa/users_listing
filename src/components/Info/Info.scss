@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.information {
+  margin-bottom: 5%;
+}
+
+.heading {
+  margin: auto;
+  background: $theme1;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.value {
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+.description {
+  margin-left: 5%;
+}
